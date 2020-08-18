@@ -1,0 +1,5 @@
+﻿  1.1.c
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion abanzada\tp 1\1.1.c(40,11): warning C4013: 'system' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion abanzada\tp 1\1.1.c(75): warning C4715: 'triangulo': no todas las rutas de acceso de control devuelven un valor
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion abanzada\tp 1\1.1.c(55): warning C4715: 'Triangulo_Valido': no todas las rutas de acceso de control devuelven un valor
+  tp 1.vcxproj -> C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion abanzada\Debug\1.1.exe
