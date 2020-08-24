@@ -1,5 +1,5 @@
 /*
- *	File:	1..c
+ *	File:   3..c
  *	Author:	Christopher Roldan Sanchez
  *	Mail:	Christopher_Rol@hotmail.es
  *	Date:
@@ -9,7 +9,8 @@
  *	Universidad:	Universidad Argentina De La Empresa (UADE)
  *	Docente:        Iervasi Scokin, Juan Jose
  *
- *	Ejercicio:
+ *	Ejercicio: 
+ *
  *		
  *
  */
@@ -20,7 +21,7 @@
 // Declaro funciones
 
 int main(void) {
-
+    
 
     printf("\n"); system("PAUSE");
     return 0;

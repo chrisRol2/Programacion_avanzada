@@ -1,0 +1,24 @@
+1.	Realizar una función que permita cargar con números enteros, una matriz de 5x5, ingresando los datos desde teclado. ¿En qué cambiaría la función si la matriz contuviera otro tipo de datos y/o tuviese otras dimensiones?
+
+2.	Realizar una función que determine si una matriz cuadrada de dimensión N es simétrica con respecto a su diagonal principal.
+
+3.	Realice una función devuelva verdadero si todas sus columnas de una matriz son palíndromos.
+      
+4.	Dada una matriz de 5x5 de números enteros, ordenar en forma ascendente cada una de sus filas.
+
+5.	Realizar 9 funciones que generen las matrices detalladas a continuación:
+
+6.	Hacer una función que cargue una matriz con números al azar entre 0 y 999, la cual representa la lluvia mensual caída del año 1995 al 2008. Las filas representan los años y las columnas correponden a los 12 meses del año.
+
+7.	Dada una matriz cargada utilizando la función del ejercicio anterior, realizar funciones para:
+     a)	Almacenar en un vector la lluvia promedio caida en cada uno de los meses 
+    b)	Almacenar en un vector la lluvia promedio caida durante cada uno de los años
+    c)	Mostrar los resultados obtenidos en los puntos a y b 
+
+8.	Dadas dos matrices cuadradas A y B de dimensión NxN, obtener una matriz C de dimensión NxN, que contenga el producto de las dos primeras, sabiendo que:
+ 
+9.	Dada una matriz de dimension NxN. realizar las siguientes operaciones:
+    a)	Intercambiar dos filas cualquiera.  
+    b)	Intercambiar dos columnas cualesquiera. 
+    c)	Intercambiar una fila y una columna dada
+    d)	Transponer la matriz sobre si misma

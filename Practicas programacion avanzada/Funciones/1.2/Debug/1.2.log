@@ -1,4 +1,1 @@
-﻿  1.2.c
-C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion abanzada\1.2\1.2.c(35,11): warning C4013: 'system' sin definir; se supone que extern devuelve como resultado int
-C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion abanzada\1.2\1.2.c(48): warning C4715: 'mayor_estricto': no todas las rutas de acceso de control devuelven un valor
-  1.2.vcxproj -> C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion abanzada\Debug\1.2.exe
+﻿  1.2.vcxproj -> C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Debug\1.2.exe

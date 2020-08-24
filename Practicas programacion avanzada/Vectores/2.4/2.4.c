@@ -20,8 +20,8 @@
 #include <stdbool.h>
 // Declaro funciones
 void imprimir(int vec[], int n);
-void ordenar(int vec[], int n);
 int busqueda_binaria(int vec[], int n, int buscado);
+void ordenar(int vec[], int n);
 int main(void) {
         int vec[10] = { 4,5,1,0,9,6,7,24,9,2 };
         int buscado;

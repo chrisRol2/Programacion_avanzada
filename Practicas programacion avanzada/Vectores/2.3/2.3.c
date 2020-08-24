@@ -20,6 +20,8 @@
 // Declaro funciones
 void ordenar(int vec[], int n);
 void imprimir(int vec[], int n);
+int busqueda_binaria(int vec[], int n, int buscado);
+
 
 int main(void) {
     int vec[10] = { 4,5,1,0,9,6,7,24,9,2 };
@@ -50,5 +52,27 @@ void imprimir(int vec[], int n) {
 
 
     for (int i = 0; i < n; i++)printf("%d\n", vec[i]);
+
+}
+int busqueda_binaria(int vec[], int n, int buscado) {
+    int inferior = 0;
+    int superior = n;
+    int mitad;
+    int i = 0;
+    while ((inferior <= superior) && (i < 5)) {
+        mitad = (inferior + superior) / 2;
+        if (vec[mitad] == buscado)return mitad;
+        if (vec[mitad] > buscado) {
+            superior = mitad;
+            mitad = (inferior + superior) / 2;
+        }
+        if (vec[mitad] < buscado) {
+            inferior = mitad;
+            mitad = (inferior + superior) / 2;
+        }
+        i++;
+    }
+    return -1;
+
 
 }
