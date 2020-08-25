@@ -1,0 +1,6 @@
+﻿  3.6.c
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Matrices\3.6\3.6.c(27,10): warning C4013: 'srand' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Matrices\3.6\3.6.c(27,17): warning C4013: 'getpid' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Matrices\3.6\3.6.c(32,25): warning C4013: 'system' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Matrices\3.6\3.6.c(47,16): warning C4013: 'rand' sin definir; se supone que extern devuelve como resultado int
+  3.6.vcxproj -> C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Debug\3.6.exe

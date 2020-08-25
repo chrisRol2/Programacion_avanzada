@@ -68,6 +68,10 @@ int main(void) {
     clear(matGen);
     gen8(matGen,DIM,DIM);
     imprimirMatriz(matGen, DIM, DIM);
+        
+    clear(matGen);
+    gen9(matGen,DIM,DIM);
+    imprimirMatriz(matGen, DIM, DIM);
 
 
     printf("\n"); system("PAUSE");
@@ -161,16 +165,52 @@ void gen7(int mat[DIM][DIM], int n, int m) {
 }
 
 void gen8(int mat[DIM][DIM], int n, int m) {
-    int generador = 1;
-    bool control = false;
+    int generador = 1;      // declaro e inicializo  la variable generador 
+    bool control = false;   // variable de control para generar la matriz
     for (int i = 0; i < n; i++) {
+        if (!(i % 2))control = false;
+        else control = true;
         for (int j = 0; j < m; j++) {
-            if ((i % 2) == 1 && j == 0) {
+            if (control) {
                 mat[i][j] = generador;
-          }
+                generador++;
+                control = false;
+            } else {
+                control = true;
+            }
         }
     }
 }
+
+void gen9(int mat[DIM][DIM], int n, int m) {
+    int generador = 0;
+   
+        for (int i = 0; i < 4; i++) {
+            generador++;
+            mat[0][i] = generador;
+        }
+        for (int i = 1; i < 4; i++) {
+            generador++;
+            mat[i][3] = generador;
+        }
+        for (int i = 2; i >= 0 ; i--) {
+            generador++;
+            mat[3][i] = generador;
+        }
+        for (int i = 2; i >= 1; i--) {
+            generador++;
+            mat[i][0] = generador;
+        }
+        for (int i = 1; i <= 2; i++) {
+            generador++;
+            mat[1][i] = generador;
+        }
+        for (int i = 2; i >= 1; i--) {
+            generador++;
+            mat[2][i] = generador;
+        }
+}
+
 
 
 void imprimirMatriz(int mat[DIM][DIM], int  n, int m) {

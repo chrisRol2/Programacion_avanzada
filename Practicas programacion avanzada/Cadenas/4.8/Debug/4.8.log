@@ -1,0 +1,4 @@
+﻿  4.8.c
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Cadenas\4.8\4.8.c(34,27): warning C4013: 'system' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Cadenas\4.8\4.8.c(40,23): warning C4018: '<=': no coinciden signed/unsigned
+  4.8.vcxproj -> C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Debug\4.8.exe

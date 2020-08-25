@@ -1,0 +1,47 @@
+﻿
+1.	Hacer una función que permita invertir una secuencia de caracteres. 
+
+2.	Hacer una función que determine si una secuencia de caracteres es
+		capicúa.
+
+3.	Hacer una función que devuelva la cantidad de palabras 
+(separados por uno o más espacios) que tiene una frase.
+
+4.	Hacer una función que permita reemplazar en una secuencia de caracteres 
+todos los guiones (-) por el carácter numeral (#).
+
+5.	Hacer una función que permita insertar en una secuencia de dígitos 
+los caracteres guión cada 8 dígitos a partir del cuarto dígito, 
+y un espacio cada 8 dígitos a partir del octavo dígito.
+Si la cantidad de dígitos no es múltiplo de ocho agregar delante
+de la cadena caracteres ‘0’ hasta que la misma sea múltiplo de 8.
+
+	Ejemplos:	472348237388539055823012		4723-4823 7388-5390 5582-3012
+		8237388539055823012			0000-0823 7388-5390 5582-3012
+
+6.	Hacer una función strNcpy() que permita extraer una sub-cadena,
+indicando la posición inicial y la cantidad de caracteres. 
+Ejemplo, dada la secuencia: “El número de teléfono es 4356-7890.
+“ extraer la sub-cadena que comienza en la posición 26, 
+la cantidad de 9 caracteres.
+
+
+En los siguientes ejercicios utilice funciones de biblioteca 
+para codificar las funciones solicitadas:
+
+7.	Hacer una función que permita insertar una sub-cadena en
+una cadena a partir de una posición dada.
+
+8.	Hacer una función que permita eliminar una sub-cadena a 
+partir de una posición y un tamaño dados.
+
+9.	Hacer una función que permita convertir números enteros 
+entre 0 y 999 a palabras. Para ello se recibe como parámetros
+el número y una cadena. ¿En qué cambiaría su programa si el rango 
+de valores fuese diferente? 
+
+10.	Escribir una función strright(<cadena>,<n>) que permita 
+obtener una subcadena de caracteres con los últimos <n> caracteres
+de la cadena pasada como parámetro. La función no hará nada si el
+parámetro <n> es menor que cero o mayor que la longitud de la cadena.
+ 
