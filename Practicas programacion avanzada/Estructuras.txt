@@ -1,0 +1,37 @@
+Trabajo práctico   –   Estructuras
+
+1.	Definir estructuras para almacenar los siguientes tipos de datos:
+    a)	fecha
+    b)	hora
+    c)	Datos de un producto
+        código de barras (21 dígitos)
+        nombre  (cadena de caracteres)
+        precio unitario (número real)
+        stock (número entero)
+        fecha de actualización de stock (día, mes, año)
+
+2.	Desarrollar las siguientes funciones para manejar “tiempos”:
+    a)	Ingresar un horario (horas, minutos, segundos) desde teclado, validando que sea correcto
+    b)	Calcular la diferencia de horas. En el caso que la primera fecha es mayor a la segunda, 
+        considerar que la primera hora corresponde a la hora del día anterior.
+        La diferencia en horas no supera las 24 horas.
+    c)	Generar una cadena con formato hh:mm:ss
+
+3.	Desarrollar las siguientes funciones para manejar “fechas”:
+    a)	Ingresar una fecha (día, mes, año) desde teclado, validando que corresponda a una fecha gregoriana.
+    b)	Indicar cual de dos fechas es la mayor.
+    c)	Sumar n días a una fecha
+    d)	Generar una cadena con formato dd/mm/aaaa
+
+4.	Un supermercado desea contar con un programa que le permita registrar los datos de sus artículos.
+        En el mismo no existen más de 1000 productos distintos. Realizar un programa ABM utilizando
+        la estructura indicada en el punto 1.c, en el que los datos deberán estar ordenados por nombre. 
+        Contemplar las siguientes funciones:  
+    •	altaProd: parámetros recibidos serán el vector y la cantidad cargados hasta el momento. 
+            Esta función deberá permitir cargar productos hasta que se llene el vector o hasta 
+            que ingresen un nombre vacío en el campo nombre. 
+    •	bajaProd: parámetros recibidos serán el vector y la cantidad cargados hasta el momento.
+            Esta función deberá permitir ingresar un nombre y eliminar los datos del producto. 
+    •	mostrarProductos: parámetros recibidos serán el vector y la cantidad cargados hasta el momento. 
+            Esta función deberá permitir mostrar los datos de todos los productos del supermercado.
+ 

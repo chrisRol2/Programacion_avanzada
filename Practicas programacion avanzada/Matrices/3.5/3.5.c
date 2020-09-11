@@ -184,28 +184,28 @@ void gen8(int mat[DIM][DIM], int n, int m) {
 
 void gen9(int mat[DIM][DIM], int n, int m) {
     int generador = 0;
-   
-        for (int i = 0; i < 4; i++) {
+    int i;
+        for ( i = 0; i < 4; i++) {
             generador++;
             mat[0][i] = generador;
         }
-        for (int i = 1; i < 4; i++) {
+        for ( i = 1; i < 4; i++) {
             generador++;
             mat[i][3] = generador;
         }
-        for (int i = 2; i >= 0 ; i--) {
+        for ( i = 2; i >= 0 ; i--) {
             generador++;
             mat[3][i] = generador;
         }
-        for (int i = 2; i >= 1; i--) {
+        for ( i = 2; i >= 1; i--) {
             generador++;
             mat[i][0] = generador;
         }
-        for (int i = 1; i <= 2; i++) {
+        for ( i = 1; i <= 2; i++) {
             generador++;
             mat[1][i] = generador;
         }
-        for (int i = 2; i >= 1; i--) {
+        for ( i = 2; i >= 1; i--) {
             generador++;
             mat[2][i] = generador;
         }

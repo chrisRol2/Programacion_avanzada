@@ -1,5 +1,5 @@
 /*
- *	File:   4..c
+ *	File:   5..c
  *	Author:	Christopher Roldan Sanchez
  *	Mail:	Christopher_Rol@hotmail.es
  *	Date:
@@ -17,7 +17,6 @@
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include <string.h>
  // Declaro funciones
 
 int main(void) {

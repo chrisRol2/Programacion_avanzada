@@ -1,72 +1,110 @@
-//EJERCICIO TIPOS DE TRIANGULOS
-
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include <stdlib.h>   
-#include <time.h>
-
-//"N" Si no corresponden a las medidas de un triangulo
-//"E" equilatero, "I" isoseles, "S" escaleno
-//** Un lado de un triángulo es siempre menor a la suma de los otros dos lados (a < b + c),
-//pero mayor que su diferencia (a > b - c).*
+#include <stdlib.h>
 
 
-// prototipo de la funcion
-char TipoDeTriangulo(int n1, int n2, int n3);
 
-// LA funcion
-char TipoDeTriangulo(int n1, int n2, int n3) {
-    char tipo;
-    //verificar si es un triangulo
-    if ((n1 < (n2 + n3)) && (n2 < (n1 + n3)) && (n3 < (n1 + n2))) {
-        if ((n1 > (n2 - n3)) && (n2 > (n1 - n3)) && (n3 > (n1 - n2))) {
-            if (n1 == n2 && n2 == n3) //equilatero
-            {
-                tipo = 'E';
-            } else {
-                if ((n1 != n2) && (n2 != n3) && (n1 != n3))//escaleno
-                {
-                    tipo = 'S';
-                } else {
-                    tipo = 'I';
+void reemplazar(char palabra[], char cToReplace, char cNew);
+int contPalabras(char cadena[]);
 
-                }
-            }
-        }
-        return tipo;
-        //return tipo;
-    } else {
-        return 'f';
-    }
 
+
+int main()
+{
+    char palabra[40];
+    char palabrainvertida[40];
+    char palabras[] = " Hacer una   funcion que devuelva la cantidad de palabras (separados por uno o mas espacios) que tiene una frase";
+
+
+
+    int cantpalabras;
+
+
+
+    cantpalabras = contPalabras(palabras);
+
+
+
+    printf("La cantidad de palabras es %d\n", cantpalabras);
+
+
+
+    return 0;
 }
 
 
-//el programa
-int main(void) {
-    int n1;
-    int n2;
-    int n3;
-    char tipo_triangulo;
+
+int contPalabras(char cadena[])
+{
+    int longvector = 0;
+    int i;
+    int contador_palabras = 0;
+    int vengo_de_un_espacio = 0; // En cero: NO vengo de un espacio
 
 
-    printf("Ingrese lado 1 del triangulo ");
-    scanf("%d", &n1);
-    printf("Ingrese lado 2 del triangulo ");
-    scanf("%d", &n2);
-    printf("Ingrese lado 3 del triangulo ");
-    scanf("%d", &n3);
-    printf("------------------------------------------------\n");
-    tipo_triangulo = TipoDeTriangulo(n1, n2, n3);
-    printf("Los datos ingresados son:\n");
-    printf("Lado 1: %d\n", n1);
-    printf("Lado 2: %d\n", n2);
-    printf("Lado 3: %d\n", n3);
-    printf("------------------------------------------------\n");
-    printf("El tipo de triangulo es: %c\n", tipo_triangulo);
+
+    while (cadena[longvector] != '\0')
+    {
+        longvector++;
+    }
 
 
-    system("pause");
 
-    return 0;
+    printf("La longitud del vector es %d\n", longvector);
+
+
+
+    if (longvector > 0)
+    {
+        if (cadena[0] == ' ')
+        {
+            vengo_de_un_espacio = 1;
+        }
+    }
+
+
+
+    for (i = 0; i < longvector; i++)
+    {
+        if (cadena[i] == ' ')
+        {
+            if (vengo_de_un_espacio == 0)
+            {
+                contador_palabras++;
+                vengo_de_un_espacio = 1;
+            }
+        }
+        else
+        {
+            vengo_de_un_espacio = 0;
+        }
+    }
+
+
+
+    return contador_palabras;
+}
+
+
+
+void reemplazar(char palabra[], char cToReplace, char cNew)
+{
+    int contador = 0;
+    int i = 0;
+
+
+
+    while (palabra[contador] != '\0')
+    {
+        contador++;
+    }
+
+
+
+    for (i = 0; i <= (contador - 1); i++)
+    {
+        if (palabra[i] == cToReplace)
+        {
+            palabra[i] = cNew;
+        }
+    }
 }

@@ -17,12 +17,13 @@
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include <stdbool.h>
+#define false 0
+#define true 1
 #define DIM 4
 // Declaro funciones
 void cargarMatriz(int mat[DIM][DIM], int  n, int m);
 void imprimirMatriz(int mat[DIM][DIM], int  n, int m);
-bool ColumnasPalindromas(int mat[DIM][DIM], int n, int m);
+int ColumnasPalindromas(int mat[DIM][DIM], int n, int m);
 int main(void) {
     int mat1[DIM][DIM] = {
         {1,1,1,1},
@@ -40,7 +41,7 @@ int main(void) {
     return 0;
 }
 
-bool ColumnasPalindromas(int mat[DIM][DIM], int n, int m) {
+int ColumnasPalindromas(int mat[DIM][DIM], int n, int m) {
     int aux;
 
     for (int i = 0; i < n; i++) {
