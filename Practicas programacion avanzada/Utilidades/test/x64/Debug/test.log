@@ -1,0 +1,4 @@
+﻿  test.c
+C:\Users\chris\OneDrive\Universidad\UNIVERSIDAD\UADE\Programacion avanzada\Practicas\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(14,10): warning C4101:  'palabrainvertida': variable local sin referencia
+C:\Users\chris\OneDrive\Universidad\UNIVERSIDAD\UADE\Programacion avanzada\Practicas\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(13,10): warning C4101:  'palabra': variable local sin referencia
+  test.vcxproj -> C:\Users\chris\OneDrive\Universidad\UNIVERSIDAD\UADE\Programacion avanzada\Practicas\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\x64\Debug\test.exe

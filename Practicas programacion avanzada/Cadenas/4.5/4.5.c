@@ -27,9 +27,7 @@
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <string.h>
+
  // Declaro funciones
  void insertarGuion(char cadena[200]);
  void concatenar(char cadena1[],char cadena2[]);

@@ -22,6 +22,8 @@
 #include <string.h>
 // Declaro funciones
 int contPalabras(char cadena[]);
+int strlen(char cadena[]);
+void strcpy(char destino[], char origen[]);
 int main(void) {
     char cadena[200];
     printf("Ingresar cadena: "); scanf("%[^\n]", cadena);
@@ -43,3 +45,23 @@ int contPalabras(char cadena[]) {
     }
     return (contador == 0 ? contador : contador + 1);
 }
+
+
+int strlen(char cadena[]){
+	int length = 0;
+	while( cadena[length] != '\0' ) {
+		length++;
+	}
+	return length;
+}
+
+void strcpy(char destino[], char origen[]) {
+
+	for( int i = 0; i < strlen(origen); i++ ) {
+		destino[i] = origen[i];
+	}
+	destino[strlen(origen)] = '\0';
+
+}
+
+

@@ -1,0 +1,8 @@
+﻿  3.9.c
+C:\Users\chris\OneDrive\Universidad\UNIVERSIDAD\UADE\Programacion avanzada\Practicas\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Matrices\3.9\3.9.c(36,10): warning C4013:  'srand' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\OneDrive\Universidad\UNIVERSIDAD\UADE\Programacion avanzada\Practicas\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Matrices\3.9\3.9.c(36,17): warning C4013:  'getpid' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\OneDrive\Universidad\UNIVERSIDAD\UADE\Programacion avanzada\Practicas\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Matrices\3.9\3.9.c(63,25): warning C4013:  'system' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\OneDrive\Universidad\UNIVERSIDAD\UADE\Programacion avanzada\Practicas\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Matrices\3.9\3.9.c(94,62): warning C4028:  parámetro formal 2 distinto de la declaración
+C:\Users\chris\OneDrive\Universidad\UNIVERSIDAD\UADE\Programacion avanzada\Practicas\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Matrices\3.9\3.9.c(94,62): warning C4028:  parámetro formal 3 distinto de la declaración
+C:\Users\chris\OneDrive\Universidad\UNIVERSIDAD\UADE\Programacion avanzada\Practicas\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Matrices\3.9\3.9.c(110,16): warning C4013:  'rand' sin definir; se supone que extern devuelve como resultado int
+  3.9.vcxproj -> C:\Users\chris\OneDrive\Universidad\UNIVERSIDAD\UADE\Programacion avanzada\Practicas\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\x64\Debug\3.9.exe

@@ -19,11 +19,13 @@
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include <string.h>
+
 #define true 1
 #define false 0
 
 // Declaro funciones
+int strlen(char cadena[]);
+void strcpy(char destino[], char origen[]);
 int capicua(char cadena[]);
 int main(void) {
     char cadena[200];
@@ -40,3 +42,23 @@ int capicua(char cadena[]) {
     }
     return true;
 }
+
+
+int strlen(char cadena[]){
+	int length = 0;
+	while( cadena[length] != '\0' ) {
+		length++;
+	}
+	return length;
+}
+
+void strcpy(char destino[], char origen[]) {
+
+	for( int i = 0; i < strlen(origen); i++ ) {
+		destino[i] = origen[i];
+	}
+	destino[strlen(origen)] = '\0';
+
+}
+
+

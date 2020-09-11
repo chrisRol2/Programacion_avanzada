@@ -1,0 +1,4 @@
+﻿  1.6.c
+C:\Users\chris\OneDrive\Universidad\UNIVERSIDAD\UADE\Programacion avanzada\Practicas\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Funciones\1.6\1.6.c(66,25): warning C4013:  'system' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\OneDrive\Universidad\UNIVERSIDAD\UADE\Programacion avanzada\Practicas\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Funciones\1.6\1.6.c(91,44): warning C4244:  '+=': conversión de 'double' a 'float'; posible pérdida de datos
+  1.6.vcxproj -> C:\Users\chris\OneDrive\Universidad\UNIVERSIDAD\UADE\Programacion avanzada\Practicas\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\x64\Debug\1.6.exe
