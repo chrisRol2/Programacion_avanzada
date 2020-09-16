@@ -1,0 +1,6 @@
+﻿  simulacro parcial.c
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\99 parcial\practica parcial\simulacro parcial.c(41,10): warning C4013: 'srand' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\99 parcial\practica parcial\simulacro parcial.c(41,17): warning C4013: 'getpid' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\99 parcial\practica parcial\simulacro parcial.c(56,25): warning C4013: 'system' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\99 parcial\practica parcial\simulacro parcial.c(85,16): warning C4013: 'rand' sin definir; se supone que extern devuelve como resultado int
+  practica parcial.vcxproj -> C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Debug\practica parcial.exe

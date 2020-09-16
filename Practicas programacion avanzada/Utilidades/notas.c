@@ -34,3 +34,4 @@ void concatenar(char cadena1[], char cadena2[]) {
 
 #define false 0
 #define true  1
+

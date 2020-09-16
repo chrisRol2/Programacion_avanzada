@@ -115,6 +115,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5.1", "Estructuras\5.1\5.1.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5.2", "Estructuras\5.2\5.2.vcxproj", "{48277094-CE0C-46B0-BE9D-1BBD4349D9ED}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "99 Parcial", "99 Parcial", "{4CFAEE95-30D8-4F91-B138-BAAAC555E2E5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "practica parcial", "99 parcial\practica parcial\practica parcial.vcxproj", "{483981AF-6F93-457E-8946-C775CF41D050}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -435,6 +439,14 @@ Global
 		{48277094-CE0C-46B0-BE9D-1BBD4349D9ED}.Release|x64.Build.0 = Release|x64
 		{48277094-CE0C-46B0-BE9D-1BBD4349D9ED}.Release|x86.ActiveCfg = Release|Win32
 		{48277094-CE0C-46B0-BE9D-1BBD4349D9ED}.Release|x86.Build.0 = Release|Win32
+		{483981AF-6F93-457E-8946-C775CF41D050}.Debug|x64.ActiveCfg = Debug|x64
+		{483981AF-6F93-457E-8946-C775CF41D050}.Debug|x64.Build.0 = Debug|x64
+		{483981AF-6F93-457E-8946-C775CF41D050}.Debug|x86.ActiveCfg = Debug|Win32
+		{483981AF-6F93-457E-8946-C775CF41D050}.Debug|x86.Build.0 = Debug|Win32
+		{483981AF-6F93-457E-8946-C775CF41D050}.Release|x64.ActiveCfg = Release|x64
+		{483981AF-6F93-457E-8946-C775CF41D050}.Release|x64.Build.0 = Release|x64
+		{483981AF-6F93-457E-8946-C775CF41D050}.Release|x86.ActiveCfg = Release|Win32
+		{483981AF-6F93-457E-8946-C775CF41D050}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -479,6 +491,7 @@ Global
 		{45B188BF-ECEC-4F35-9EB0-1DBD07D9AEBF} = {B5671EDD-D23C-490E-B0E2-555DE6B437CB}
 		{930B4E8E-1E41-4F31-B2A3-626B30B3F736} = {A64CC1C0-1108-4146-AA5F-26432F4FA2E9}
 		{48277094-CE0C-46B0-BE9D-1BBD4349D9ED} = {A64CC1C0-1108-4146-AA5F-26432F4FA2E9}
+		{483981AF-6F93-457E-8946-C775CF41D050} = {4CFAEE95-30D8-4F91-B138-BAAAC555E2E5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {209FEC2F-2D98-4C02-A883-E4F6DEFBD308}
