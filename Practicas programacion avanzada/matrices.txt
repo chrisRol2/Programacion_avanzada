@@ -17,7 +17,8 @@
     b)	Almacenar en un vector la lluvia promedio caida durante cada uno de los años
     c)	Mostrar los resultados obtenidos en los puntos a y b 
 
-8.	Dadas dos matrices cuadradas A y B de dimensión NxN, obtener una matriz C de dimensión NxN, que contenga el producto de las dos primeras, sabiendo que:
+8.	Dadas dos matrices cuadradas A y B de dimensión NxN,
+    obtener una matriz C de dimensión NxN, que contenga el producto de las dos primeras, sabiendo que:
  
 9.	Dada una matriz de dimension NxN. realizar las siguientes operaciones:
     a)	Intercambiar dos filas cualquiera.  
