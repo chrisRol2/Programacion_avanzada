@@ -1,3 +1,20 @@
+/*
+*	File:   ppi2ej2.c
+*	Author:	Christopher Roldan Sanchez
+*	Mail:	Christopher_Rol@hotmail.es
+*	Date:
+*	Description:
+*
+*	Materia:		Programacion avanzada
+*	Universidad:	Universidad Argentina De La Empresa (UADE)
+*	Docente:        Iervasi Scokin, Juan Jose
+*
+*	Ejercicio: 
+*
+*		
+*
+*/
+
 #define TAMANOMAXIMO 100
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
