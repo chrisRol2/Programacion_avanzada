@@ -15,9 +15,6 @@
 *
 */
 
-#define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
-
 #define FILA 4
 #define COLUMNA 6
 // Declaro funciones

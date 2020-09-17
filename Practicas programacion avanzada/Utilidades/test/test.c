@@ -108,3 +108,46 @@ void reemplazar(char palabra[], char cToReplace, char cNew)
         }
     }
 }
+
+void IMPRIMIR_MATRIZ(int m[F][C])
+{
+    printf("\t");
+    printf("\t");
+    for(int c=0;c<C;c++)
+    {
+        printf("%d\t",2001+c);
+    }
+    printf("\n");
+    for(int f=0;f<F;f++)
+    {
+        for(int c=0;c<C;c++)
+        {
+            if(f==0 && c==0)
+            {
+                printf("Turbiedad\t");
+            }
+            if(f==1 && c==0)
+            {
+                printf("UFC EC\t\t");
+            }
+            if (f==2 && c==0)
+            {
+                printf("Cloro libre\t");
+            }
+            if (f==3 && c==0)
+            {
+                printf("Temperatura\t");
+            }
+            else if(f==4 && c==0)
+            {
+                printf("Nitratos\t");
+            }
+            if(f==5 && c==0)
+            {
+                printf("pH\t\t");
+            }
+            printf("%d\t",m[f][c]);
+        }
+        printf("\n");
+    }
+}

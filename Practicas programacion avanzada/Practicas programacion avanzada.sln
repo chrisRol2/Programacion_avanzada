@@ -119,6 +119,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "99 Parcial", "99 Parcial", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "practica parcial", "99 parcial\practica parcial\practica parcial.vcxproj", "{483981AF-6F93-457E-8946-C775CF41D050}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "practica parcial intensivo", "99 parcial\practica parcial intensivo\practica parcial intensivo.vcxproj", "{094F3AA5-213B-41FA-9531-B9B6DB01D538}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -447,6 +449,14 @@ Global
 		{483981AF-6F93-457E-8946-C775CF41D050}.Release|x64.Build.0 = Release|x64
 		{483981AF-6F93-457E-8946-C775CF41D050}.Release|x86.ActiveCfg = Release|Win32
 		{483981AF-6F93-457E-8946-C775CF41D050}.Release|x86.Build.0 = Release|Win32
+		{094F3AA5-213B-41FA-9531-B9B6DB01D538}.Debug|x64.ActiveCfg = Debug|x64
+		{094F3AA5-213B-41FA-9531-B9B6DB01D538}.Debug|x64.Build.0 = Debug|x64
+		{094F3AA5-213B-41FA-9531-B9B6DB01D538}.Debug|x86.ActiveCfg = Debug|Win32
+		{094F3AA5-213B-41FA-9531-B9B6DB01D538}.Debug|x86.Build.0 = Debug|Win32
+		{094F3AA5-213B-41FA-9531-B9B6DB01D538}.Release|x64.ActiveCfg = Release|x64
+		{094F3AA5-213B-41FA-9531-B9B6DB01D538}.Release|x64.Build.0 = Release|x64
+		{094F3AA5-213B-41FA-9531-B9B6DB01D538}.Release|x86.ActiveCfg = Release|Win32
+		{094F3AA5-213B-41FA-9531-B9B6DB01D538}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -492,6 +502,7 @@ Global
 		{930B4E8E-1E41-4F31-B2A3-626B30B3F736} = {A64CC1C0-1108-4146-AA5F-26432F4FA2E9}
 		{48277094-CE0C-46B0-BE9D-1BBD4349D9ED} = {A64CC1C0-1108-4146-AA5F-26432F4FA2E9}
 		{483981AF-6F93-457E-8946-C775CF41D050} = {4CFAEE95-30D8-4F91-B138-BAAAC555E2E5}
+		{094F3AA5-213B-41FA-9531-B9B6DB01D538} = {4CFAEE95-30D8-4F91-B138-BAAAC555E2E5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {209FEC2F-2D98-4C02-A883-E4F6DEFBD308}

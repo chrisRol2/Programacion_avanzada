@@ -1,0 +1,6 @@
+﻿  ppi.c
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\99 parcial\practica parcial intensivo\ppi.c(35,10): warning C4013: 'srand' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\99 parcial\practica parcial intensivo\ppi.c(35,17): warning C4013: 'getpid' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\99 parcial\practica parcial intensivo\ppi.c(63,25): warning C4013: 'system' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\99 parcial\practica parcial intensivo\ppi.c(96,16): warning C4013: 'rand' sin definir; se supone que extern devuelve como resultado int
+  practica parcial intensivo.vcxproj -> C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Debug\practica parcial intensivo.exe
