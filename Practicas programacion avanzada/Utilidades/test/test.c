@@ -1,153 +1,131 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdlib.h> //permite utilizar funciones de random
+#include <time.h>
 
+#define COLU 4
+#define FILAS 10
 
+//Declaro funciones a Utilizar
+void llenarmatriz(int mat[FILAS][COLU]);
+void imprimirmatriz(int mat[FILAS][COLU]);
+void sueldoTotalporfila(int mat[FILAS][COLU]);
 
-void reemplazar(char palabra[], char cToReplace, char cNew);
-int contPalabras(char cadena[]);
-
-
-
-int main()
+int main(void)
 {
-    char palabra[40];
-    char palabrainvertida[40];
-    char palabras[] = " Hacer una   funcion que devuelva la cantidad de palabras (separados por uno o mas espacios) que tiene una frase";
+
+    int mat[FILAS][COLU];
+    
+
+    srand(time(NULL));
+    llenarmatriz(mat);
+    imprimirmatriz(mat); // Punto A
+    sueldoTotalporfila(mat); // Punto B
 
 
-
-    int cantpalabras;
-
-
-
-    cantpalabras = contPalabras(palabras);
-
-
-
-    printf("La cantidad de palabras es %d\n", cantpalabras);
-
-
-
+    system("PAUSE");
     return 0;
+
+
 }
 
 
-
-int contPalabras(char cadena[])
+void llenarmatriz(int mat[FILAS][COLU]) //Lleno Columnas (j)
 {
-    int longvector = 0;
     int i;
-    int contador_palabras = 0;
-    int vengo_de_un_espacio = 0; // En cero: NO vengo de un espacio
 
 
-
-    while (cadena[longvector] != '\0')
+    for (i = 0; i < FILAS; i++)
     {
-        longvector++;
-    }
 
-
-
-    printf("La longitud del vector es %d\n", longvector);
-
-
-
-    if (longvector > 0)
-    {
-        if (cadena[0] == ' ')
-        {
-            vengo_de_un_espacio = 1;
-        }
-    }
-
-
-
-    for (i = 0; i < longvector; i++)
-    {
-        if (cadena[i] == ' ')
-        {
-            if (vengo_de_un_espacio == 0)
-            {
-                contador_palabras++;
-                vengo_de_un_espacio = 1;
-            }
-        }
-        else
-        {
-            vengo_de_un_espacio = 0;
-        }
-    }
-
-
-
-    return contador_palabras;
-}
-
-
-
-void reemplazar(char palabra[], char cToReplace, char cNew)
-{
-    int contador = 0;
-    int i = 0;
-
-
-
-    while (palabra[contador] != '\0')
-    {
-        contador++;
-    }
-
-
-
-    for (i = 0; i <= (contador - 1); i++)
-    {
-        if (palabra[i] == cToReplace)
-        {
-            palabra[i] = cNew;
-        }
+        //Semilla rand()%(Máximo-Mínimo+1)+Mínimo
+        mat[i][0] = rand() % (20000 - 10000 + 1) + 10000;
+        mat[i][1] = rand() % (10000 - 3000 + 1) + 3000;
+        mat[i][2] = rand() % (24 - 12 + 1) + 12; 
+        mat[i][3] = ( mat[i][1] + 250) * mat[i][2];
     }
 }
 
-void IMPRIMIR_MATRIZ(int m[F][C])
+
+void imprimirmatriz(int mat[FILAS][COLU])
+
 {
-    printf("\t");
-    printf("\t");
-    for(int c=0;c<C;c++)
+    int c = 0;
+
+
+    printf("\n Matriz \n");
+    printf("\t\tLegajo\tSueldoB\tOT\tSueldoT\n");
+
+    printf("Fila 1  : \t");
+    for (c = 0; c < COLU; c++)
     {
-        printf("%d\t",2001+c);
+        printf("%d\t", mat[0][c]);
     }
     printf("\n");
-    for(int f=0;f<F;f++)
+    printf("Fila 2  : \t");
+    for (c = 0; c < COLU; c++)
     {
-        for(int c=0;c<C;c++)
-        {
-            if(f==0 && c==0)
-            {
-                printf("Turbiedad\t");
-            }
-            if(f==1 && c==0)
-            {
-                printf("UFC EC\t\t");
-            }
-            if (f==2 && c==0)
-            {
-                printf("Cloro libre\t");
-            }
-            if (f==3 && c==0)
-            {
-                printf("Temperatura\t");
-            }
-            else if(f==4 && c==0)
-            {
-                printf("Nitratos\t");
-            }
-            if(f==5 && c==0)
-            {
-                printf("pH\t\t");
-            }
-            printf("%d\t",m[f][c]);
-        }
-        printf("\n");
+        printf("%d\t", mat[1][c]);
     }
+    printf("\n");
+    printf("Fila 3 : \t");
+    for (c = 0; c < COLU; c++)
+    {
+        printf("%d\t", mat[2][c]);
+    }
+    printf("\n");
+    printf("Fila 4 : \t");
+    for (c = 0; c < COLU; c++)
+    {
+        printf("%d\t", mat[3][c]);
+    }
+    printf("\n");
+    printf("Fila 5 : \t");
+    for (c = 0; c < COLU; c++)
+    {
+        printf("%d\t", mat[4][c]);
+    }
+    printf("\n");
+    printf("Fila 6 : \t");
+    for (c = 0; c < COLU; c++)
+    {
+        printf("%d\t", mat[5][c]);
+    }
+    printf("\n");
+    printf("Fila 7 : \t");
+    for (c = 0; c < COLU; c++)
+    {
+        printf("%d\t", mat[6][c]);
+    }
+    printf("\n");
+    printf("Fila 8 : \t");
+    for (c = 0; c < COLU; c++)
+    {
+        printf("%d\t", mat[7][c]);
+    }
+    printf("\n");
+    printf("Fila 9 : \t");
+    for (c = 0; c < COLU; c++)
+    {
+        printf("%d\t", mat[8][c]);
+    }
+    printf("\n");
+    printf("Fila 10 : \t");
+    for (c = 0; c < COLU; c++)
+    {
+        printf("%d\t", mat[9][c]);
+    }
+    printf("\n");
+
+}
+
+void sueldoTotalporfila(int mat[FILAS][COLU])
+
+{
+    int nfila;
+    printf("Ingrese un numero de fila: \n");
+    scanf("%d", &nfila);
+    printf(" El sueldo maximo del empleado %d: $%d.\n", nfila, mat[nfila - 1][3]);
+
+
 }

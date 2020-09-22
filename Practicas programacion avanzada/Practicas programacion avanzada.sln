@@ -127,6 +127,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "practica parcial intensivo 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "practica parcial intensivo 2 ex2", "99 parcial\practica parcial intensivo 2 ex2\practica parcial intensivo 2 ex2.vcxproj", "{DA547FEB-1C95-46FB-BD9E-CBE495B8247B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Primer Parcial", "Parcial\Primer Parcial\Primer Parcial.vcxproj", "{38077659-CE25-469D-9F75-CE6CFB255552}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -487,6 +489,14 @@ Global
 		{DA547FEB-1C95-46FB-BD9E-CBE495B8247B}.Release|x64.Build.0 = Release|x64
 		{DA547FEB-1C95-46FB-BD9E-CBE495B8247B}.Release|x86.ActiveCfg = Release|Win32
 		{DA547FEB-1C95-46FB-BD9E-CBE495B8247B}.Release|x86.Build.0 = Release|Win32
+		{38077659-CE25-469D-9F75-CE6CFB255552}.Debug|x64.ActiveCfg = Debug|x64
+		{38077659-CE25-469D-9F75-CE6CFB255552}.Debug|x64.Build.0 = Debug|x64
+		{38077659-CE25-469D-9F75-CE6CFB255552}.Debug|x86.ActiveCfg = Debug|Win32
+		{38077659-CE25-469D-9F75-CE6CFB255552}.Debug|x86.Build.0 = Debug|Win32
+		{38077659-CE25-469D-9F75-CE6CFB255552}.Release|x64.ActiveCfg = Release|x64
+		{38077659-CE25-469D-9F75-CE6CFB255552}.Release|x64.Build.0 = Release|x64
+		{38077659-CE25-469D-9F75-CE6CFB255552}.Release|x86.ActiveCfg = Release|Win32
+		{38077659-CE25-469D-9F75-CE6CFB255552}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -536,6 +546,7 @@ Global
 		{0621A4BB-C8AE-4D42-87C4-A1D76B0454EB} = {4CFAEE95-30D8-4F91-B138-BAAAC555E2E5}
 		{EC06557B-E0D9-4D90-B1B3-9C45BC964422} = {4CFAEE95-30D8-4F91-B138-BAAAC555E2E5}
 		{DA547FEB-1C95-46FB-BD9E-CBE495B8247B} = {4CFAEE95-30D8-4F91-B138-BAAAC555E2E5}
+		{38077659-CE25-469D-9F75-CE6CFB255552} = {4CFAEE95-30D8-4F91-B138-BAAAC555E2E5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {209FEC2F-2D98-4C02-A883-E4F6DEFBD308}

@@ -24,7 +24,7 @@
 // Declaro funciones
 void intercambiarFila(int mat[DIM][DIM], int n, int m, int nfila1, int nfila2);
 void intercambiarColumna(int mat[DIM][DIM], int n, int m, int nfila1, int nfila2);
-void intercambiarFilaColumna(int mat[DIM][DIM], int n, int m, int nfila1, int nfila2);
+void intercambiarFilaColumna(int mat[DIM][DIM], int n, int nfila1, int nfila2);
 void transponer(int mat[DIM][DIM], int n, int m);
 
 void imprimirMatriz(int mat[DIM][DIM], int  n, int m);
@@ -51,7 +51,7 @@ int main(void) {
     printf("-----------------\n");
 
     printf("-FILA COLUMNA----\n");
-    intercambiarFilaColumna(mat1, DIM, DIM, 1, 2);
+    intercambiarFilaColumna(mat1, DIM, 1, 2);
     imprimirMatriz(mat1, DIM, DIM);
     printf("-----------------\n");
 
@@ -82,12 +82,12 @@ void intercambiarColumna(int mat[DIM][DIM], int n, int m, int nfila1, int nfila2
     }
 }
 
-void intercambiarFilaColumna(int mat[DIM][DIM], int n, int m, int nfila1, int nfila2) {
-    int aux[DIM];
+void intercambiarFilaColumna(int mat[DIM][DIM], int n, int nColumna, int nfila2) {
+    int aux;
     for (int i = 0; i < n; i++) {
-        aux[i] = mat[i][nfila1];
-        mat[i][nfila1] = mat[nfila2][i];
-        mat[nfila2][i] = aux[i];
+        aux = mat[i][nColumna];
+        mat[i][nColumna] = mat[nfila2][i];
+        mat[nfila2][i] = aux;
     }
 }
 

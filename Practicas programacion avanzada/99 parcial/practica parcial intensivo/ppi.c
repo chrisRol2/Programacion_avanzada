@@ -123,6 +123,7 @@ int random(int minimo, int maximo) {
 
     return rand() % (maximo - minimo + 1) + minimo;
 }
+
 float promediofila(int  mat[FILA][COLUMNA], int  fila, int limite) {
     float promedio = -1;
     int i;
@@ -134,6 +135,7 @@ float promediofila(int  mat[FILA][COLUMNA], int  fila, int limite) {
     promedio /= limite;
     return promedio;
 }
+
 int maximoFila(int vec[COLUMNA]) {
     int maximo = 0;
     int i;
@@ -142,6 +144,7 @@ int maximoFila(int vec[COLUMNA]) {
     }
     return maximo;
 }
+
 void ordenarBurbuja(int mat[FILA][COLUMNA], int vec[COLUMNA], int fila) {
     int i;
     int aux;
