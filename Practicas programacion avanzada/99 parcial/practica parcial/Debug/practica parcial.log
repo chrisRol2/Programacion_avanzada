@@ -1,8 +1,2 @@
-﻿  simulacro parcial.c
-C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\99 parcial\practica parcial\simulacro parcial.c(38,10): warning C4013: 'srand' sin definir; se supone que extern devuelve como resultado int
-C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\99 parcial\practica parcial\simulacro parcial.c(38,17): warning C4013: 'getpid' sin definir; se supone que extern devuelve como resultado int
-C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\99 parcial\practica parcial\simulacro parcial.c(43,11): warning C4013: 'printf' sin definir; se supone que extern devuelve como resultado int
-C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\99 parcial\practica parcial\simulacro parcial.c(53,25): warning C4013: 'system' sin definir; se supone que extern devuelve como resultado int
-C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\99 parcial\practica parcial\simulacro parcial.c(82,16): warning C4013: 'rand' sin definir; se supone que extern devuelve como resultado int
-simulacro parcial.obj : error LNK2019: símbolo externo _printf sin resolver al que se hace referencia en la función _imprimirMatriz
+﻿simulacro parcial.obj : error LNK2019: símbolo externo _printf sin resolver al que se hace referencia en la función _imprimirMatriz
 C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Debug\practica parcial.exe : fatal error LNK1120: 1 externos sin resolver

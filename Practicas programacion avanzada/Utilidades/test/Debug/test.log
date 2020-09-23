@@ -1,3 +1,5 @@
 ﻿  test.c
-C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(20,21): warning C4244: 'función': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(23,21): warning C4244: 'función': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(63,80): warning C4244: '=': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(152,13): warning C4018: '<': no coinciden signed/unsigned
   test.vcxproj -> C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Debug\test.exe

@@ -23,7 +23,9 @@ void cargarMAT(float mat[FILAS][COLUMNAS], int max_min[COLUMNAS][2]);
 void imprimirMat(float mat[FILAS][COLUMNAS], char nombre1[COLUMNAS][25], char nombre2[COLUMNAS][25]);
 int random(int minimo, int maximo);
 int pedirDato(int min, int max);
-
+float promedioColumna(float  mat[FILAS][COLUMNAS], int  columna, int limite);
+void Codvalormaximo(float mat[FILAS][COLUMNAS], float *codigo1, float *codigo2);
+float promedioUnidades(float mat[FILAS][COLUMNAS], int anio);
 int main(void) {
     srand(getpid());
 
@@ -33,7 +35,7 @@ int main(void) {
         {100,4000},
         {1,4},
         {800,5000},
-        {1,10}        
+        {1,10}
     };
     char nombres1[7][25] = {
         "Codigo\t",
@@ -55,12 +57,26 @@ int main(void) {
     };
     int columnaSelaccionada = 0;
     int datCaract[COLUMNAS][FILAS];
+    float codigo1, codigo2;
+
     cargarMAT(datCaract, limites_rand);
     
     imprimirMat(datCaract,nombres1,nombres2);
 
     columnaSelaccionada = pedirDato(1, FILAS);
 
+    printf("El promedio de las ultimas 3 filas de \"%s %s\" es: %.2f\n",
+           nombres1[columnaSelaccionada - 1],
+           nombres2[columnaSelaccionada - 1],
+           promedioColumna(datCaract, columnaSelaccionada - 1, 4)
+    );
+    Codvalormaximo(datCaract, &codigo1, &codigo2);
+    printf("los codigos de mayor precio son: %.0f y %.0f", codigo1, codigo2);
+    
+    
+    printf("\nPromedio de unidades vendidas luego del 2005: %.0f", 
+           promedioUnidades(datCaract, 2005)
+    );
     printf("\n"); system("PAUSE");
     return 0;
 }
@@ -107,20 +123,51 @@ int pedirDato(int min, int max) {
 
     do {
 
-        printf("\nSeleccione columna:\n");scanf("%d", &dato);
+        printf("\nSeleccione columna:\t");scanf("%d", &dato);
         if( (dato > max) || (dato < min) )printf("\nDato fuera de rango.\n");
      } while( (dato > max) || (dato < min) );
     return dato;
 }
 
-float promedioColumna(int  mat[FILAS][COLUMNAS], int  columna, int limite) {
-    float promedio = -1;
+float promedioColumna(float  mat[FILAS][COLUMNAS], int  columna, int limite) {
+    float promedio = 0;
     int i;
-
-    for( i = limite; i < FILAS; i++ ) {
-
-        promedio += (int) mat[i][columna];
-    }
+ 
+    for( i = limite; i < FILAS; i++ )promedio += mat[i][columna];
     promedio /= COLUMNAS - limite + 1;
+    return promedio;
+}
+
+void Codvalormaximo(float mat[FILAS][COLUMNAS], float *codigo1, float *codigo2) {
+    float maximo1 = mat[0][6];
+    float maximo2 = mat[0][6];
+    int i;
+    int pos1 = 0;
+    int pos2 = 0;
+    for( i = 0; i < FILAS; i++ ) {
+        for( i = 0; i < FILAS; i++ ) {
+            if( maximo1 < mat[i][6] ) {
+                maximo2 = maximo1;
+                maximo1 = mat[i][6];
+                pos2 = pos1;
+                pos1 = i;
+            }
+        }
+    }
+    *codigo1 = mat[pos1][0];
+    *codigo2 = mat[pos2][0];
+}
+float promedioUnidades(float mat[FILAS][COLUMNAS], int anio) {
+    float promedio = 0;
+    int i;
+    int contador = 0;
+
+    for( i = 0; i < FILAS; i++ ) {
+        if( mat[i][1] > anio ) {
+            contador++;
+            promedio += mat[i][2];
+        }
+    }
+    promedio /= contador;
     return promedio;
 }
