@@ -134,7 +134,8 @@ float promedioColumna(float  mat[FILAS][COLUMNAS], int  columna, int limite) {
     int i;
  
     for( i = limite; i < FILAS; i++ )promedio += mat[i][columna];
-    promedio /= COLUMNAS - limite + 1;
+    printf("resta columna limite: %d\n", COLUMNAS - limite );
+    promedio /= COLUMNAS - limite;
     return promedio;
 }
 
