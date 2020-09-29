@@ -162,3 +162,21 @@ void reemplazaChar(char cad[]){
 
     printf("\nEjercicio 2, cadena resultante: %s\n",cad);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

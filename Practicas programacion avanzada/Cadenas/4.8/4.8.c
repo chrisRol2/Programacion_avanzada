@@ -42,8 +42,10 @@ void remover(char cadena[], int pos, int tamano){
    
         }
         else {
+//			strcat(aux, cadena[i]);
             sprintf(aux, "%s%c", aux, cadena[i]);
         }
     }
-    sprintf(cadena, "%s", aux);
+	strcpy(cadena, aux);
+    //sprintf(cadena, "%s", aux);
 }
