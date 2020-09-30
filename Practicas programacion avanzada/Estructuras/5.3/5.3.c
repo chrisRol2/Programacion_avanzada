@@ -35,6 +35,7 @@ typedef struct {
 int fecha_gregoriana(fechas fecha);
 int bisiesto(int year);
 void ingresarDato(int *dato, int min, int max);
+int mayor(fechas fecha1, fechas fecha2);
 fechas ingresarFecha();
 int main(void) {
 	fechas fecha1;
@@ -45,6 +46,10 @@ int main(void) {
 	fecha1 = ingresarFecha();
 	printf("\tIngrese 2\xF8 Fecha:\n");
 	fecha2 = ingresarFecha();
+
+	printf("La %d\xF8 fecha es la mayor", mayor(fecha1, fecha2));
+
+
 
 	printf("\n"); system("PAUSE");
 	return 0;
@@ -92,4 +97,15 @@ fechas ingresarFecha() {
 		}
 	} while( !fecha_gregoriana(fecha1) );
 	return fecha1;
+}
+int mayor(fechas fecha1, fechas fecha2) {
+	
+	if( (fecha1.anio > fecha2.anio) )return 1;
+	else if( (fecha1.anio < fecha2.anio) ) return 2;
+	else if( fecha1.mes > fecha2.mes ) return 1;
+	else if( fecha1.mes < fecha2.mes ) return 2;
+	else if( fecha1.dia > fecha2.dia ) return 1;
+	else if( fecha1.dia < fecha2.dia ) return 2;
+	else return 0;
+	return -1;
 }

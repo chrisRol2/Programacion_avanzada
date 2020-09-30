@@ -65,9 +65,9 @@ int main(void) {
 			cadena[i] = *(diferenciaP + cont) + 48;
 		} 
 		else {
-			cadena[i] = (*(diferenciaP + cont) + 48)/10;
+			cadena[i] = (*(diferenciaP + cont) / 10 + 48);
 			i++;
-			cadena[i] = (*(diferenciaP + cont) + 48) - cadena[i - 1];
+			cadena[i] = (*(diferenciaP + cont) % 10) + 48;
 		}
 		cont++;
 		
