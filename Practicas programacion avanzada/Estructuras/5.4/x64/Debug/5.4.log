@@ -1,0 +1,9 @@
+﻿  5.4.c
+C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Estructuras\5.4\5.4.c(80,22): warning C4013:  'system' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Estructuras\5.4\5.4.c(89,7): warning C4013:  'gets' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Estructuras\5.4\5.4.c(100,47): warning C4047:  'función': 'char *' es distinto en los niveles de direccionamiento indirecto de 'char (*)[23]'
+C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Estructuras\5.4\5.4.c(100,47): warning C4024:  'ingresarCod': tipos distintos para el parámetro formal y el parámetro real 1
+C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Estructuras\5.4\5.4.c(111,15): warning C4013:  'isdigit' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Estructuras\5.4\5.4.c(143,15): warning C4101:  'aux': variable local sin referencia
+C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Estructuras\5.4\5.4.c(251,30): warning C4267:  '=': conversión de 'size_t' a 'int'; posible pérdida de datos
+  5.4.vcxproj -> C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\x64\Debug\5.4.exe

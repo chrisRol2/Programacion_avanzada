@@ -12,7 +12,7 @@
 *	Ejercicio: 3.	Desarrollar las siguientes funciones para manejar “fechas”:
     a)	Ingresar una fecha (día, mes, año) desde teclado, validando que corresponda a una fecha gregoriana.
     b)	Indicar cual de dos fechas es la mayor.
-    c)	Sumar n días a una fecha
+ //   c)	Sumar n días a una fecha
     d)	Generar una cadena con formato dd/mm/aaaa
 
 	ñ -> \xA4
@@ -21,6 +21,7 @@
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
+#include <string.h>
 #define true 1
 #define false 0
 // Declaro estructuras
@@ -28,26 +29,42 @@ typedef struct {
 	int dia;
 	int mes;
 	int anio;
-	char cadena[10];
+	char cadena[11];
 }fechas;
 // Declaro funciones
 
 int fecha_gregoriana(fechas fecha);
 int bisiesto(int year);
 void ingresarDato(int *dato, int min, int max);
-int mayor(fechas fecha1, fechas fecha2);
 fechas ingresarFecha();
+int mayor(fechas fecha1, fechas fecha2);
+void aCadena(fechas *fecha);
 int main(void) {
 	fechas fecha1;
 	fechas fecha2;
 	int nDias;
-
+	
 	printf("\tIngrese 1\xF8 Fecha:\n");
 	fecha1 = ingresarFecha();
 	printf("\tIngrese 2\xF8 Fecha:\n");
 	fecha2 = ingresarFecha();
-
-	printf("La %d\xF8 fecha es la mayor", mayor(fecha1, fecha2));
+	aCadena(&fecha1);
+	aCadena(&fecha2);
+	//printf("La %d\xF8 fecha es la mayor", mayor(fecha1, fecha2));
+	switch( mayor(fecha1, fecha2) ) {
+		case 0:
+			printf("Las fechas son iguales: %s", fecha1.cadena);
+			break;
+		case 1:
+			printf("%s es la fecha mayor", fecha1.cadena);
+			break;
+		case 2:
+			printf("%s es la fecha mayor", fecha2.cadena);
+			break;
+		default:
+			printf("Error al introducir fechas");
+			break;
+	}
 
 
 
@@ -64,7 +81,6 @@ int fecha_gregoriana(fechas fecha) {
 	if( fecha.mes <= 12 )return false;
 	return false;
 }
-
 int bisiesto(int year) {
 
 	if (year % 4 == 0) {
@@ -108,4 +124,23 @@ int mayor(fechas fecha1, fechas fecha2) {
 	else if( fecha1.dia < fecha2.dia ) return 2;
 	else return 0;
 	return -1;
+}
+void aCadena(fechas *fecha) { //   dd/mm/aaaa
+	char aux[10];
+	char aux1[10];
+	char aux2[10]="";
+	sprintf(fecha->cadena, "%d/%d/%d",
+			fecha->dia,
+			fecha->mes,
+			fecha->anio
+			);
+	if( fecha->dia < 10 ) sprintf(aux, "0%d",fecha->dia);
+	else sprintf(aux, "%d/",fecha->dia);
+	if( fecha->mes < 10 ) sprintf(aux1, "0%d", fecha->mes);
+	else sprintf(aux1, "%d/",fecha->mes);
+	if( fecha->mes < 10 )        sprintf(aux2, "000%d", fecha->mes);
+	else if( fecha->mes < 100 )  sprintf(aux2, "00%d", fecha->mes);
+	else if( fecha->mes < 1000 ) sprintf(aux2, "0%d", fecha->mes);
+
+	sprintf(fecha->cadena, "%s/%s/%s", aux,aux1,aux2);
 }

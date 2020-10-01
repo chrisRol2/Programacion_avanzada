@@ -1,4 +1,4 @@
 ﻿  5.3.c
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Estructuras\5.3\5.3.c(54,22): warning C4013:  'system' sin definir; se supone que extern devuelve como resultado int
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Estructuras\5.3\5.3.c(43,6): warning C4101:  'nDias': variable local sin referencia
+C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Estructuras\5.3\5.3.c(71,22): warning C4013:  'system' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Estructuras\5.3\5.3.c(45,6): warning C4101:  'nDias': variable local sin referencia
   5.3.vcxproj -> C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\x64\Debug\5.3.exe
