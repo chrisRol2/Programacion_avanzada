@@ -17,17 +17,20 @@
 					•	Hacer una función buscarArch() que reciba el nombre de un archivo,  y un valor e indique en que posición se encuentra del archivo. En caso de no encontrarlo devolver un valor negativo. Usar método de búsqueda binaria.
 					•	Hacer una función eliminarValor() que reciba el nombre de un archivo y un valor y permita eliminarlo de forma lógica del mismo.
 					•	Hacer una función eliminarValor() que reciba el nombre de un archivo y un valor y permita eliminarlo de forma física del mismo.
-
-*
 *	ñ -> \xA4
 *	° -> \xF8
-*
 */
-
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <string.h>
 // Declaro funciones
+void grabarArch();
+void mostrarArch();
+void agregarAcumulado();
+void ordenarArch();
+void buscarArch();
+void eliminarValor();
+void eliminarValor1();
 
 int main(void) {
 
@@ -35,3 +38,11 @@ int main(void) {
 	printf("\n"); system("PAUSE");
 	return 0;
 }
+
+void grabarArch(){}
+void mostrarArch(){}
+void agregarAcumulado(){}
+void ordenarArch(){}
+void buscarArch(){}
+void eliminarValor(){}
+void eliminarValor1(){}

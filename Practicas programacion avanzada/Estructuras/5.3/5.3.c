@@ -128,12 +128,8 @@ int mayor(fechas fecha1, fechas fecha2) {
 void aCadena(fechas *fecha) { //   dd/mm/aaaa
 	char aux[10];
 	char aux1[10];
-	char aux2[10]="";
-	sprintf(fecha->cadena, "%d/%d/%d",
-			fecha->dia,
-			fecha->mes,
-			fecha->anio
-			);
+	char aux2[10];
+	
 	if( fecha->dia < 10 ) sprintf(aux, "0%d",fecha->dia);
 	else sprintf(aux, "%d/",fecha->dia);
 	if( fecha->mes < 10 ) sprintf(aux1, "0%d", fecha->mes);
