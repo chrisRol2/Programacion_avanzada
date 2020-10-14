@@ -1,0 +1,12 @@
+﻿  PrimerParcialEjercicio1.c
+C:\Users\chris\Source\Repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Parcial\Primer Parcial\PrimerParcialEjercicio1.c(30,10): warning C4013: 'srand' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\Source\Repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Parcial\Primer Parcial\PrimerParcialEjercicio1.c(30,17): warning C4013: 'getpid' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\Source\Repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Parcial\Primer Parcial\PrimerParcialEjercicio1.c(62,24): warning C4133: 'función': tipos incompatibles, de 'int [7][7]' a 'float (*)[7]'
+C:\Users\chris\Source\Repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Parcial\Primer Parcial\PrimerParcialEjercicio1.c(64,26): warning C4133: 'función': tipos incompatibles, de 'int [7][7]' a 'float (*)[7]'
+C:\Users\chris\Source\Repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Parcial\Primer Parcial\PrimerParcialEjercicio1.c(71,37): warning C4133: 'función': tipos incompatibles, de 'int [7][7]' a 'float (*)[7]'
+C:\Users\chris\Source\Repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Parcial\Primer Parcial\PrimerParcialEjercicio1.c(73,29): warning C4133: 'función': tipos incompatibles, de 'int [7][7]' a 'float (*)[7]'
+C:\Users\chris\Source\Repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Parcial\Primer Parcial\PrimerParcialEjercicio1.c(78,38): warning C4133: 'función': tipos incompatibles, de 'int [7][7]' a 'float (*)[7]'
+C:\Users\chris\Source\Repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Parcial\Primer Parcial\PrimerParcialEjercicio1.c(80,25): warning C4013: 'system' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\Source\Repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Parcial\Primer Parcial\PrimerParcialEjercicio1.c(92,69): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\chris\Source\Repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Parcial\Primer Parcial\PrimerParcialEjercicio1.c(118,16): warning C4013: 'rand' sin definir; se supone que extern devuelve como resultado int
+  Primer Parcial.vcxproj -> C:\Users\chris\Source\Repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\x64\Debug\Primer Parcial.exe

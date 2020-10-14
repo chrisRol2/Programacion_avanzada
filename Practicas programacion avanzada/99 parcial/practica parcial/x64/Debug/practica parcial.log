@@ -1,0 +1,2 @@
+﻿simulacro parcial.obj : error LNK2019: símbolo externo printf sin resolver al que se hace referencia en la función imprimirMatriz
+C:\Users\chris\Source\Repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\x64\Debug\practica parcial.exe : fatal error LNK1120: 1 externos sin resolver

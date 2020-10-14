@@ -23,26 +23,85 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <string.h>
+
+#define SIZE 32
+#define FILENAME "archivo.bin"
 // Declaro funciones
-void grabarArch();
-void mostrarArch();
-void agregarAcumulado();
-void ordenarArch();
-void buscarArch();
-void eliminarValor();
-void eliminarValor1();
+int grabarArch(char nombre[SIZE]);
+int mostrarArch(char nombre[SIZE]);
+int agregarAcumulado(char nombre[SIZE]);
+int ordenarArch(char nombre[SIZE]);
+int buscarArch(char nombre[SIZE], int buscado);
+void eliminarValor(char nombre[SIZE], int buscado);
+void eliminarValor1(char nombre[SIZE], int buscado);
+
+int random(int minimo, int maximo);
 
 int main(void) {
-
+	srand(getpid());
+	if( grabarArch(FILENAME) ) return -1;
+	mostrarArch(FILENAME);
+	agregarAcumulado(FILENAME);
+	mostrarArch(FILENAME);
 
 	printf("\n"); system("PAUSE");
 	return 0;
 }
 
-void grabarArch(){}
-void mostrarArch(){}
-void agregarAcumulado(){}
-void ordenarArch(){}
-void buscarArch(){}
-void eliminarValor(){}
-void eliminarValor1(){}
+int grabarArch(char nombre[SIZE]){
+	int entero;
+	FILE *archivo;
+	archivo = fopen(nombre, "wb");
+	if( archivo == NULL ) {
+		puts("No se pudo abrir el archivo");
+		return 1;
+	}
+	for( int i = 0; i < 10; i++ ) {
+		entero = random(0, 999);
+		fwrite(&entero, sizeof(int), 1, archivo);
+	}
+	fclose(archivo);
+}
+int mostrarArch(char nombre[SIZE]){
+	int entero=0;
+	int suma = 0;
+	FILE *archivo;
+	archivo = fopen(nombre, "rb");
+	if( archivo == NULL ) {
+		puts("No se pudo abrir el archivo");
+		return 1;
+	}
+	for( int i = 0; i < 10; i++ ) {
+		fread(&entero, sizeof(int), 1, archivo);
+		printf("entero: %d\n", entero);
+	}
+	fread(&suma, sizeof(int), 1, archivo);
+	printf("Suma: %d\n\n", suma);
+	fclose(archivo);
+}
+int agregarAcumulado(char nombre[SIZE]){
+	int entero;
+	int suma = 0;
+	FILE *archivo;
+	archivo = fopen(nombre, "ab+");
+	if( archivo == NULL ) {
+		puts("No se pudo abrir el archivo");
+		return 1;
+	}
+	for( int i = 0; i < 10; i++ ) {
+		fread(&entero, sizeof(int), 1, archivo);
+		suma += entero;
+	}
+		
+	fwrite(&suma, sizeof(int), 1, archivo);
+	fclose(archivo);
+}
+int ordenarArch(char nombre[SIZE]){}
+int buscarArch(char nombre[SIZE], int buscado){}
+void eliminarValor(char nombre[SIZE], int buscado){}
+void eliminarValor1(char nombre[SIZE], int buscado){}
+
+int random(int minimo, int maximo) {
+
+	return rand() % (maximo - minimo + 1) + minimo;
+}

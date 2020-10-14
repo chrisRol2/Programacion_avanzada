@@ -1,2 +1,2 @@
-#TargetFrameworkVersion=v4.0:PlatformToolSet=v142:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=10.0
-Debug|x64|C:\Users\chris\OneDrive\Universidad\UNIVERSIDAD\UADE\Programacion avanzada\Practicas\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\|
+PlatformToolSet=v142:VCToolArchitecture=Native32Bit:VCToolsVersion=14.25.28610:TargetPlatformVersion=10.0.18362.0:
+Debug|x64|C:\Users\chris\Source\Repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\|

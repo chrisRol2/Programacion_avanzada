@@ -1,7 +1,1 @@
-﻿  1.8.c
-C:\Users\chris\OneDrive\Universidad\UNIVERSIDAD\UADE\Programacion avanzada\Practicas\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Funciones\1.8\1.8.c(32,28): warning C4047:  'función': 'int *' es distinto en los niveles de direccionamiento indirecto de 'int **'
-C:\Users\chris\OneDrive\Universidad\UNIVERSIDAD\UADE\Programacion avanzada\Practicas\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Funciones\1.8\1.8.c(32,28): warning C4024:  'cant_billetes': tipos distintos para el parámetro formal y el parámetro real 1
-C:\Users\chris\OneDrive\Universidad\UNIVERSIDAD\UADE\Programacion avanzada\Practicas\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Funciones\1.8\1.8.c(36,12): warning C4477:  'printf' : la cadena de formato '%d' requiere un argumento de tipo 'int', pero el argumento variádico 1 tiene el tipo 'int *'
-C:\Users\chris\OneDrive\Universidad\UNIVERSIDAD\UADE\Programacion avanzada\Practicas\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Funciones\1.8\1.8.c(36,12): warning C4313:  'printf': '%d' de la cadena de formato origina conflictos con el argumento 1 del tipo 'int *'
-C:\Users\chris\OneDrive\Universidad\UNIVERSIDAD\UADE\Programacion avanzada\Practicas\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Funciones\1.8\1.8.c(42,25): warning C4013:  'system' sin definir; se supone que extern devuelve como resultado int
-  1.8.vcxproj -> C:\Users\chris\OneDrive\Universidad\UNIVERSIDAD\UADE\Programacion avanzada\Practicas\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\x64\Debug\1.8.exe
+﻿  1.8.vcxproj -> C:\Users\chris\Source\Repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\x64\Debug\1.8.exe
