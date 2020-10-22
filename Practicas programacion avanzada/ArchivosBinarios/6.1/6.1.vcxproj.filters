@@ -26,5 +26,8 @@
     <None Include="log">
       <Filter>Archivos de recursos</Filter>
     </None>
+    <None Include="temp">
+      <Filter>Archivos de recursos</Filter>
+    </None>
   </ItemGroup>
 </Project>

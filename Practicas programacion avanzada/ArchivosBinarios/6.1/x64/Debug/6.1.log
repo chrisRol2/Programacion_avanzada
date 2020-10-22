@@ -1,11 +1,9 @@
 ﻿  6.1.c
-C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\ArchivosBinarios\6.1\6.1.c(41,7): warning C4013: 'srand' sin definir; se supone que extern devuelve como resultado int
-C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\ArchivosBinarios\6.1\6.1.c(41,14): warning C4013: 'getpid' sin definir; se supone que extern devuelve como resultado int
-C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\ArchivosBinarios\6.1\6.1.c(47,22): warning C4013: 'system' sin definir; se supone que extern devuelve como resultado int
-C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\ArchivosBinarios\6.1\6.1.c(106,13): warning C4013: 'rand' sin definir; se supone que extern devuelve como resultado int
-C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\ArchivosBinarios\6.1\6.1.c(98): warning C4715: 'agregarAcumulado': no todas las rutas de acceso de control devuelven un valor
-C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\ArchivosBinarios\6.1\6.1.c(99): warning C4716: 'ordenarArch': debe devolver un valor
-C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\ArchivosBinarios\6.1\6.1.c(100): warning C4716: 'buscarArch': debe devolver un valor
-C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\ArchivosBinarios\6.1\6.1.c(64): warning C4715: 'grabarArch': no todas las rutas de acceso de control devuelven un valor
-C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\ArchivosBinarios\6.1\6.1.c(81): warning C4715: 'mostrarArch': no todas las rutas de acceso de control devuelven un valor
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\ArchivosBinarios\6.1\6.1.c(48,14): warning C4013: 'getpid' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\ArchivosBinarios\6.1\6.1.c(119,1): warning C4047: 'inicializando': 'int' es distinto en los niveles de direccionamiento indirecto de 'void *'
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\ArchivosBinarios\6.1\6.1.c(156,12): warning C4098: 'eliminarValor': función 'void' que devuelve un valor
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\ArchivosBinarios\6.1\6.1.c(172,8): warning C4101: 'temp': variable local sin referencia
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\ArchivosBinarios\6.1\6.1.c(82): warning C4715: 'grabarArch': no todas las rutas de acceso de control devuelven un valor
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\ArchivosBinarios\6.1\6.1.c(99): warning C4715: 'mostrarArch': no todas las rutas de acceso de control devuelven un valor
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\ArchivosBinarios\6.1\6.1.c(116): warning C4715: 'agregarAcumulado': no todas las rutas de acceso de control devuelven un valor
   6.1.vcxproj -> C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\x64\Debug\6.1.exe

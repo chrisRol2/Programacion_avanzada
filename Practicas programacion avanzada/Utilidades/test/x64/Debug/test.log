@@ -1,1 +1,12 @@
-﻿  test.vcxproj -> C:\Users\chris\Source\Repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\x64\Debug\test.exe
+﻿  test.c
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(31,18): warning C4244: 'función': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(61,11): warning C4098: 'crear_archivo': función 'void' que devuelve un valor
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(70,6): warning C4013: 'gets' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(72,8): warning C4477: 'scanf' : la cadena de formato '%d' requiere un argumento de tipo 'int *', pero el argumento variádico 1 tiene el tipo 'int'
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(74,8): warning C4477: 'scanf' : la cadena de formato '%d' requiere un argumento de tipo 'int *', pero el argumento variádico 1 tiene el tipo 'int'
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(76,8): warning C4477: 'scanf' : la cadena de formato '%d' requiere un argumento de tipo 'int *', pero el argumento variádico 1 tiene el tipo 'int'
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(78,8): warning C4477: 'scanf' : la cadena de formato '%d' requiere un argumento de tipo 'int *', pero el argumento variádico 1 tiene el tipo 'int'
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(82,6): error C2054: se esperaba '(' a continuación de '​​'
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(83,1): error C2082: nueva definición del parámetro formal 'mostrar_archivo'
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(83,1): error C2143: error de sintaxis: falta ';' delante de '{'
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(113,1): fatal error C1004: se encontró un final de archivo no esperado
