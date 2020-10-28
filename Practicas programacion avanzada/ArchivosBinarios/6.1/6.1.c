@@ -55,10 +55,10 @@ int main(void) {
 		   buscarArch(FILENAME, buscado)+1
 	);
 	ordenarArch(FILENAME);
-	eliminarValor(FILENAME, buscado);
-	printf("Buscado 2: ");
-	ingresarDato(&buscado, 0, 999);
-	eliminarValor1(FILENAME, buscado);
+	//eliminarValor(FILENAME, buscado);
+	//printf("Buscado 2: ");
+	//ingresarDato(&buscado, 0, 999);
+	//eliminarValor1(FILENAME, buscado);
 
 	printf("\n"); system("PAUSE");
 	return 0;
@@ -131,20 +131,47 @@ int buscarArch(char nombre[SIZE], int buscado){
 	return -2;
 }
 int ordenarArch(char nombre[SIZE]){
-	int aux[10];
+	int valor1,valor2,aux;
+	valor1 = valor2 = aux = 0;
 	FILE *archivo;
 	archivo = fopen(nombre, "rb+");
 	if( archivo == NULL ) {
 		puts("No se pudo abrir el archivo");
-		return 0;
+		return 1;
 	}
-	fread(aux, sizeof(int), 10, archivo);
-	ordenar(aux, 10);
-	fseek(archivo, 0, SEEK_SET);
-	fwrite(aux, sizeof(int),10, archivo);
+
+	for( int i = 0; i < 10; i++ ) {
+		fseek(archivo, i, SEEK_SET);
+		fread(&valor1, sizeof(int), 1, archivo);
+
+		for( int j = i; j < 9 ; j++ ){
+			fread(&valor2, sizeof(int), 1, archivo);
+			printf("i: %d j: %d valor1: %d valor2: %d\n", i, j, valor1, valor2);
+			if( valor1 > valor2 ) {
+				//fseek(archivo, -1, SEEK_CUR);
+				//fwrite(valor1, sizeof(int), 1, archivo);
+				//fseek(archivo, i, SEEK_SET);
+				//fwrite(valor1, sizeof(int), 1, archivo);
+				//fseek(archivo, j, SEEK_SET);
+
+			}
+		}
+	}
 	fclose(archivo);
 	mostrarArch(FILENAME);
-	return 1;
+	return 0;
+}
+void ordenar(int vec[], int n) {
+	int aux;
+	for (int i = 0; i < n - 1; i++) {
+		for (int j = i + 1; j < n; j++) {
+			if (vec[i] > vec[j]) {
+				aux = vec[i];
+				vec[i] = vec[j];
+				vec[j] = aux;
+			}
+		}
+	}
 }
 void eliminarValor(char nombre[SIZE], int buscado){
 	FILE *archivo;
@@ -165,8 +192,7 @@ void eliminarValor(char nombre[SIZE], int buscado){
 	fwrite(aux, sizeof(int),10, archivo);
 	fclose(archivo);
 	mostrarArch(FILENAME);
-
-}
+	}
 void eliminarValor1(char nombre[SIZE], int buscado){
 	FILE *archivo;
 	FILE *temp;
@@ -191,7 +217,6 @@ void eliminarValor1(char nombre[SIZE], int buscado){
 	rename("archivo","archivo32.bin");
 	//mostrarArch(FILENAME);
 	//remove(FILENAME);
-
 }
 
 int random(int minimo, int maximo) {
@@ -204,20 +229,6 @@ void ingresarDato(int *dato, int min, int max) {
 		scanf("%d", dato);
 		if( (*dato > max) || (*dato < min) )printf("\nDato fuera de rango.\n");
 	} while( (*dato > max) || (*dato < min) );
-
-}
-void ordenar(int vec[], int n) {
-
-	int aux;
-	for (int i = 0; i < n - 1; i++) {
-		for (int j = i + 1; j < n; j++) {
-			if (vec[i] > vec[j]) {
-				aux = vec[i];
-				vec[i] = vec[j];
-				vec[j] = aux;
-			}
-		}
-	}
 
 }
 void imprimir(int vec[], int n) {
