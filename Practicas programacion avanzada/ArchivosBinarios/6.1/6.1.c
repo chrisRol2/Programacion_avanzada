@@ -27,13 +27,12 @@
 #include <locale.h>
 
 #define SIZE 32
-#define FILENAME "archivo"
+#define FILENAME "archivo.bin"
 // Declaro funciones
 int grabarArch(char nombre[SIZE]);
 int mostrarArch(char nombre[SIZE]);
 int agregarAcumulado(char nombre[SIZE]);
 int buscarArch(char nombre[SIZE], int buscado);
-int ordenarArch(char nombre[SIZE]);
 void eliminarValor(char nombre[SIZE], int buscado);
 void eliminarValor1(char nombre[SIZE], int buscado);
 
@@ -41,7 +40,8 @@ void ingresarDato(int *dato, int min, int max);
 int random(int minimo, int maximo);
 void ordenar    (int vec[], int n);
 void imprimir(int vec[], int n);
-
+void FileRead(int *var, int locate, FILE *file);
+void FileWrite(int *var, int locate, FILE *file);
 
 int main(void) {
 	int buscado;
@@ -54,11 +54,12 @@ int main(void) {
 		   buscado,
 		   buscarArch(FILENAME, buscado)+1
 	);
+	puts("Ordenado:");
 	ordenarArch(FILENAME);
-	//eliminarValor(FILENAME, buscado);
-	//printf("Buscado 2: ");
-	//ingresarDato(&buscado, 0, 999);
-	//eliminarValor1(FILENAME, buscado);
+	eliminarValor(FILENAME, buscado);
+	printf("Buscado 2: ");
+	ingresarDato(&buscado, 0, 999);
+	eliminarValor1(FILENAME, buscado);
 
 	printf("\n"); system("PAUSE");
 	return 0;
@@ -139,21 +140,13 @@ int ordenarArch(char nombre[SIZE]){
 		puts("No se pudo abrir el archivo");
 		return 1;
 	}
-
 	for( int i = 0; i < 10; i++ ) {
-		fseek(archivo, i, SEEK_SET);
-		fread(&valor1, sizeof(int), 1, archivo);
-
-		for( int j = i; j < 9 ; j++ ){
-			fread(&valor2, sizeof(int), 1, archivo);
-			printf("i: %d j: %d valor1: %d valor2: %d\n", i, j, valor1, valor2);
+		for( int j = i + 1; j < 10; j++ ) {
+			FileRead(&valor1, i, archivo);
+			FileRead(&valor2, j, archivo);
 			if( valor1 > valor2 ) {
-				//fseek(archivo, -1, SEEK_CUR);
-				//fwrite(valor1, sizeof(int), 1, archivo);
-				//fseek(archivo, i, SEEK_SET);
-				//fwrite(valor1, sizeof(int), 1, archivo);
-				//fseek(archivo, j, SEEK_SET);
-
+			FileWrite(&valor1, j, archivo);
+			FileWrite(&valor2, i, archivo);
 			}
 		}
 	}
@@ -161,38 +154,30 @@ int ordenarArch(char nombre[SIZE]){
 	mostrarArch(FILENAME);
 	return 0;
 }
-void ordenar(int vec[], int n) {
-	int aux;
-	for (int i = 0; i < n - 1; i++) {
-		for (int j = i + 1; j < n; j++) {
-			if (vec[i] > vec[j]) {
-				aux = vec[i];
-				vec[i] = vec[j];
-				vec[j] = aux;
-			}
-		}
-	}
+void FileRead(int *var, int locate, FILE *file) {
+	fseek(file, locate * sizeof(int),SEEK_SET);
+	fread(var, sizeof(int), 1, file);
 }
+void FileWrite(int *var, int locate, FILE *file) {
+	fseek(file, locate * sizeof(int),SEEK_SET);
+	fwrite(var, sizeof(int), 1, file);
+}
+
 void eliminarValor(char nombre[SIZE], int buscado){
 	FILE *archivo;
-	int aux[10];
-
+	int pos;
+	int valNull = -1;
+	int *pnull = &valNull;
+	pos = buscarArch(nombre, buscado);
 	archivo = fopen(nombre, "rb+");
 	if( archivo == NULL ) {
 		puts("No se pudo abrir el archivo");
-		return -1;
+		return;
 	}
-	fread(aux, sizeof(int), 10, archivo);
-	for( int i = 0; i < 10; i++ ) {
-		if( aux[i] == buscado ) {
-			aux[i] = -1;
-		}
-	}
-	fseek(archivo, 0, SEEK_SET);
-	fwrite(aux, sizeof(int),10, archivo);
+	FileWrite(pnull, pos, archivo);
 	fclose(archivo);
 	mostrarArch(FILENAME);
-	}
+}
 void eliminarValor1(char nombre[SIZE], int buscado){
 	FILE *archivo;
 	FILE *temp;
@@ -207,16 +192,14 @@ void eliminarValor1(char nombre[SIZE], int buscado){
 
 	fread(aux, sizeof(int), 11, archivo);
 	buscado = buscarArch(FILENAME, buscado);
-	for( int i = buscado; i < 10; i++ ) {
-		aux[i] = aux[i+1];
-	}
-	//imprimir(aux, 10);
-	
 	
 	fclose(archivo);
-	rename("archivo","archivo32.bin");
+
 	//mostrarArch(FILENAME);
-	//remove(FILENAME);
+	remove(FILENAME);
+	char command[100];
+	sprintf(command, "DEL %s", FILENAME);
+	system(command);
 }
 
 int random(int minimo, int maximo) {

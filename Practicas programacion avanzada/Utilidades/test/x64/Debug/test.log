@@ -1,38 +1,38 @@
 ﻿  test.c
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(3,10): error C2065: 'FILE': identificador no declarado
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(3,18): error C2065: 'archivo': identificador no declarado
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(3,10): warning C4552: "*": el resultado de la expresión no se usa
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(4,10): error C2065: 'FILE': identificador no declarado
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(4,19): error C2065: 'temporal': identificador no declarado
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(4,10): warning C4552: "*": el resultado de la expresión no se usa
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(5,14): error C2065: 'Producto': identificador no declarado
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(5,14): error C2146: error de sintaxis: falta ';' delante del identificador 'producto'
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(5,22): error C2065: 'producto': identificador no declarado
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(8,13): error C2065: 'archivo': identificador no declarado
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(8,20): warning C4013: 'fopen' sin definir; se supone que extern devuelve como resultado int
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(9,14): error C2065: 'temporal': identificador no declarado
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(11,17): error C2065: 'archivo': identificador no declarado
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(11,25): error C2065: 'NULL': identificador no declarado
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(11,37): error C2065: 'temporal': identificador no declarado
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(11,44): error C2065: 'NULL': identificador no declarado
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(15,14): warning C4013: 'fread' sin definir; se supone que extern devuelve como resultado int
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(15,24): error C2065: 'producto': identificador no declarado
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(15,41): error C2065: 'producto': identificador no declarado
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(15,54): error C2065: 'archivo': identificador no declarado
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(16,21): warning C4013: 'feof' sin definir; se supone que extern devuelve como resultado int
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(16,29): error C2065: 'archivo': identificador no declarado
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(17,25): error C2065: 'producto': identificador no declarado
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(17,26): error C2224: el operando izquierdo de '.codigo' debe tener el tipo struct/union
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(17,51): error C2065: 'VALOR_CENTINELA': identificador no declarado
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(18,23): warning C4013: 'fwrite' sin definir; se supone que extern devuelve como resultado int
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(18,33): error C2065: 'producto': identificador no declarado
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(18,50): error C2065: 'producto': identificador no declarado
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(18,64): error C2065: 'temporal': identificador no declarado
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(20,28): error C2065: 'producto': identificador no declarado
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(20,45): error C2065: 'producto': identificador no declarado
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(20,58): error C2065: 'archivo': identificador no declarado
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(23,15): warning C4013: 'fclose' sin definir; se supone que extern devuelve como resultado int
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(23,23): error C2065: 'archivo': identificador no declarado
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(24,24): error C2065: 'temporal': identificador no declarado
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(26,15): warning C4013: 'remove' sin definir; se supone que extern devuelve como resultado int
-C:\Users\chris\source\repos\chrisRol2\Domotica_\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(27,15): warning C4013: 'rename' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(3,10): error C2065: 'FILE': identificador no declarado
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(3,18): error C2065: 'archivo': identificador no declarado
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(3,10): warning C4552: "*": el resultado de la expresión no se usa
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(4,10): error C2065: 'FILE': identificador no declarado
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(4,19): error C2065: 'temporal': identificador no declarado
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(4,10): warning C4552: "*": el resultado de la expresión no se usa
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(5,14): error C2065: 'Producto': identificador no declarado
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(5,14): error C2146: error de sintaxis: falta ';' delante del identificador 'producto'
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(5,22): error C2065: 'producto': identificador no declarado
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(8,13): error C2065: 'archivo': identificador no declarado
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(8,20): warning C4013: 'fopen' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(9,14): error C2065: 'temporal': identificador no declarado
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(11,17): error C2065: 'archivo': identificador no declarado
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(11,25): error C2065: 'NULL': identificador no declarado
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(11,37): error C2065: 'temporal': identificador no declarado
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(11,44): error C2065: 'NULL': identificador no declarado
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(15,14): warning C4013: 'fread' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(15,24): error C2065: 'producto': identificador no declarado
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(15,41): error C2065: 'producto': identificador no declarado
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(15,54): error C2065: 'archivo': identificador no declarado
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(16,21): warning C4013: 'feof' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(16,29): error C2065: 'archivo': identificador no declarado
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(17,25): error C2065: 'producto': identificador no declarado
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(17,26): error C2224: el operando izquierdo de '.codigo' debe tener el tipo struct/union
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(17,51): error C2065: 'VALOR_CENTINELA': identificador no declarado
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(18,23): warning C4013: 'fwrite' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(18,33): error C2065: 'producto': identificador no declarado
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(18,50): error C2065: 'producto': identificador no declarado
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(18,64): error C2065: 'temporal': identificador no declarado
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(20,28): error C2065: 'producto': identificador no declarado
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(20,45): error C2065: 'producto': identificador no declarado
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(20,58): error C2065: 'archivo': identificador no declarado
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(23,15): warning C4013: 'fclose' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(23,23): error C2065: 'archivo': identificador no declarado
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(24,24): error C2065: 'temporal': identificador no declarado
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(26,15): warning C4013: 'remove' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\Utilidades\test\test.c(27,15): warning C4013: 'rename' sin definir; se supone que extern devuelve como resultado int
