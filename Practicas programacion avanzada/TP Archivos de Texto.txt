@@ -1,0 +1,87 @@
+1.	Hacer una función que permita eliminar todos los comentarios de una o varias líneas de un programa fuente escrito en lenguaje “C”,.
+
+2.	Hacer una función que permita eliminar todas las directivas para el preprocesador de un programa fuente escrito en lenguaje “C”.
+
+3.	Hacer un programa que invoque y pruebe las siguientes funciones:
+•	grabarMatriz() permite grabar una matriz, tal que en un renglón se encuentren los valores reales de toda una fila
+•	leerMatriz() permite cargar una matriz desde el archivo generado por la función anterior
+
+4.	Hacer un progranma que invoque y pruebe las siguientes funciones:
+•	grabarMatriz() permite grabar una matriz, tal que los valores estan separados por comas (,)
+•	leerMatriz() permite cargar una matriz desde el generado por la función anterior
+
+5.	Utilizar el Block de notas o cvualquier otro editor para crear un archivo de texto que contenga los datos de una matriz  “rala” (matriz con más del 75 % de sus celdas sin valor definido) con el siguiente formato: (fila;columna;valor). Luego escribir una función cargarMatriz() que permita leer el archivo mencionado y cargarlo en una matriz de M x N enteros, teniendo en cuenta que no todas las posiciones tienen un valor asociado.
+Ejemplo:
+Se tiene un archivo con una matriz de 3x3 con los siguientes datos:
+(0;0;5)
+(1;1;8)
+(2;0;66)
+
+La matriz deberá quedar cargada con los siguientes valores.
+  5   0   0 
+  0   8   0
+ 66   0   0
+
+6.	Hacer un programa que invoque y pruebe las siguientes funciones:
+grabarPrecios() permite grabar en un archivo de texto el rango de precio sugerido de un producto. Cada dato se debe grabar en línea distinta.
+descripción
+precioDesde
+precioHasta 
+grabarPromedios() permite leer el archivo generado en la función anterior y generar otro archivo de texto con los promedios de los precios de los productos. Tanto la descripción como el promedio se graban en diferentes líneas.
+descripción
+promedio
+mostrarMejores() permite mostrar los productos cuyo precio promedio es superior al precio promedio de todos los productos. 
+
+7.	Hacer un programa que permita ingresar una lista de apellidos y nombres en formato "Apellido, Nombre" y guarde en el archivo ARMENIA.TXT, los nombres de aquellas personas cuyo apellido termina con la cadena "IAN", en el archivo ITALIA.TXT los terminados en "INI" y en el archivo ESPAÑA.TXT los terminados en “EZ”. Descartar el resto. Ejemplo: 
+
+Arslanian, Gustavo --> ARMENIA.TXT
+Rossini, Giuseppe     --> ITALIA.TXT
+Pérez, Juan              --> ESPAÑA.TXT  
+Smith, John             --> descartar
+
+8.	Se dispone de un archivo de texto con los datos de las partidas de 196 aviones de Aeroparque con el siguiente formato:  
+
+01-04 número de vuelo
+06-25 días de la semana de salida (se indica con “No” si ese día el avión no parte del aeropuerto)
+27-49 ciudad de destino
+51-52 hora de partida
+54-55 minuto de partida
+57-58 hora de llegada
+60-61 minuto de llegada
+63-   empresa de aviación
+
+Hacer una función permita informar todos los vuelos que salgan lunes, martes o sábado a un determinado destino y su horario de salida sea posterior a las 15:30. Dicho destino deberá ingresarse desde teclado (el ingreso de este puede ser total o parcial).
+La pantalla deberá mostrar los siguientes datos.
+-	número de avión destino
+-	hora de partida - expresada como hh:mm - 
+-	duración estimada de vuelo - expresada como hh:mm -
+-	aerolínea.
+Se sabe que existen aviones que parten un día y arriban al día siguiente.
+
+9.	Se dispone de tres formatos diferentes de archivos de texto donde se almacenan datos de empleados. Los formatos se indican al pié.
+Hacer un programa en 'C', para cada uno de los formatos de archivos suministrados, que  permitan leer uno de los archivos y grabar los datos obtenidos en un archivo binario con la siguiente estructura:
+
+#define   N    16
+#define   M    32
+typedef   struct {
+               char      nombre    [N];
+               char      domicilio [M];
+               int       dd,mm, aa;      /* fecha de emisión del cheque*/
+               int       plazoValidez; 
+}Cheque;
+
+Nota: 
+•	si la longitud del dato informado en el archivo de texto es mayor al especificado en la estructura, este dato deberá guardarse truncado.
+•	Los espacios de los valores de texto que se encuentren al final de la cadena deberán ser eliminados.
+Archivo 1: Todos los campos de este archivo son de longitud fija.
+         1         2         3         4         5         6
+123456789012345678901234567890123456789012345678901234567890123
+
+Pérez Juan       2008021130 Corrientes 348                   
+González Ana M   2008011515 Juan de Garay 1111 3er piso dto A
+
+
+Archivo 2: Todos los campos de este archivo son de longitud fija.
+Pérez Juan#2008021130#Corrientes 348#González Ana M#2008011515#Juan de Garay 1111 3er piso Dto A#
+Archivo 3: Todos los campos de este archivo están precedidos de un número de dos dígitos que indica la longitud del campo a leer.
+10Pérez Juan10200802113014Corrientes 34814González Ana M10200801151534Juan de Garay 1111 3er piso dto A

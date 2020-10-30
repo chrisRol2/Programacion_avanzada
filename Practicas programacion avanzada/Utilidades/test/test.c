@@ -1,4 +1,10 @@
-﻿#define _CRT_SECURE_NO_WARNINGS
+﻿/*
+•	Crear el archivo, ingresando los datos por teclado.
+•	Borrar del archivo los registros de aquellos lotes que se encuentren vencidos, comparando la fecha de vencimiento de cada uno con una fecha testigo que se ingresa por teclado. Para borrar los registros es necesario generar un nuevo archivo que contenga solamente los lotes no vencidos, emitiendo además un listado por pantalla con los registros eliminados.
+•	Generar e imprimir un listado con el código, el nombre y la cantidad de unidades en stock para cada medicamento, sin importar el lote al que pertenezca. El archivo no está ordenado, y los medicamentos son a lo sumo 130. 
+*/
+
+#define _CRT_SECURE_NO_WARNINGS
 
 #include <stdio.h>
 

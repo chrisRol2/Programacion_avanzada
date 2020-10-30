@@ -1,0 +1,8 @@
+﻿  6.2.c
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\ArchivosBinarios\6.2\6.2\6.2.c(265,30): warning C4013: 'fecha_gregoriana' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\ArchivosBinarios\6.2\6.2\6.2.c(274,17): warning C4013: 'bisiesto' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\ArchivosBinarios\6.2\6.2\6.2.c(295,13): warning C4013: 'gets' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\ArchivosBinarios\6.2\6.2\6.2.c(296,30): warning C4013: 'isalldigits' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\ArchivosBinarios\6.2\6.2\6.2.c(311,21): warning C4013: 'isdigit' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\ArchivosBinarios\6.2\6.2\6.2.c(323,33): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
+  6.2.vcxproj -> C:\Users\chris\Source\Repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\x64\Debug\6.2.exe
