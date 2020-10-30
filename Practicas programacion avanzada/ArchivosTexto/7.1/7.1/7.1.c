@@ -1,5 +1,5 @@
 /*
-*	File:   6..c
+*	File:   7.1.c
 *	Author:	Christopher Roldan Sanchez
 *	Mail:	Christopher_Rol@hotmail.es
 *	Date:
@@ -9,8 +9,10 @@
 *	Universidad:	Universidad Argentina De La Empresa (UADE)
 *	Docente:        Iervasi Scokin, Juan Jose
 *
-*	Ejercicio: 
-*
+*	Ejercicio: 1.	Hacer una función que permita eliminar todos 
+                    los comentarios de una o varias líneas de un 
+                    programa fuente escrito en lenguaje “C”,.
+*       
 *	ñ -> \xA4
 *	° -> \xF8
 *
