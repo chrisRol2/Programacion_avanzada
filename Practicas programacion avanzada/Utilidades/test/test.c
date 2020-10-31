@@ -65,12 +65,12 @@ void ordenarBurbujaVectores(char nombreA[])
 	{
 		for (j=i+1;j<cantreg;j++)
 		{
-			dato1=leerregistro(arch,i);
-			dato2=leerregistro(arch,j);
-			if (dato1>dato2)
+			tuestructura1=leerregistro(arch,i);
+			tuestructura2=leerregistro(arch,j);
+			if (tuestructura1.dato>tuestructura2.dato)
 			{
-				grabarregistro(arch,j,dato1);
-				grabarregistro(arch,i,dato2);
+				grabarregistro(arch,j,tuestructura1);
+				grabarregistro(arch,i,tuestructura2);
 			}
 		}
 	}
