@@ -1,0 +1,7 @@
+﻿  modfin.c
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\99 parcial\Mod final\modfin.c(83,10): warning C4013: 'srand' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\99 parcial\Mod final\modfin.c(83,17): warning C4013: 'getpid' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\99 parcial\Mod final\modfin.c(90,15): warning C4013: 'system' sin definir; se supone que extern devuelve como resultado int
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\99 parcial\Mod final\modfin.c(162,9): warning C4101: 'i': variable local sin referencia
+C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\99 parcial\Mod final\modfin.c(294,16): warning C4013: 'rand' sin definir; se supone que extern devuelve como resultado int
+  Mod final.vcxproj -> C:\Users\chris\source\repos\chrisRol2\Programacion_avanzada\Practicas programacion avanzada\x64\Debug\Mod final.exe
